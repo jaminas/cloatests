@@ -37,8 +37,6 @@ public class Test30
     public void withoutdeeplink_test() throws InterruptedException
     {
         ActivityHelper.checkCloakaActivity(activityTestRule);
-        Thread.sleep(5000);
-        ActivityHelper.checkCloakaActivity(activityTestRule);
         Assert.assertTrue(store.containsDeeplink());
         Assert.assertFalse(store.containsFinallink());
     }

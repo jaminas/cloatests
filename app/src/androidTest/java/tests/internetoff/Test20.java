@@ -48,8 +48,6 @@ public class Test20
     public void withdeeplink_test() throws InterruptedException
     {
         ActivityHelper.checkCloakaActivity(activityTestRule);
-        Thread.sleep(5000);
-        ActivityHelper.checkCloakaActivity(activityTestRule);
         Assert.assertTrue(store.containsDeeplink());
         Assert.assertEquals(this.deeplink.getDeeplink(), store.getDeeplink());
         Assert.assertFalse(store.containsFinallink());
