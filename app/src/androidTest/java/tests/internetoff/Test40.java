@@ -1,6 +1,6 @@
 package tests.internetoff;
 
-import import {PACKAGE}.MainActivity;
+import {PACKAGE}.MainActivity;
 
 import android.content.Intent;
 import android.net.Uri;
