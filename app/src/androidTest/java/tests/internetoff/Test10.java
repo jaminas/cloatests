@@ -40,6 +40,8 @@ public class Test10
     public void nointernet_test() throws InterruptedException
     {
         ActivityHelper.checkCloakaActivity(activityTestRule);
+        Thread.sleep(5000);
+        ActivityHelper.checkCloakaActivity(activityTestRule);
         Assert.assertFalse(store.containsDeeplink());
         Assert.assertFalse(store.containsFinallink());
     }
