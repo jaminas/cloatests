@@ -18,7 +18,6 @@ import tests.helper.SharedPrefs;
 import static androidx.test.InstrumentationRegistry.getTargetContext;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 
-/*
 @RunWith(AndroidJUnit4.class)
 public class Test20
 {
@@ -56,4 +55,3 @@ public class Test20
         Assert.assertFalse(store.containsFinallink());
     }
 }
- */
