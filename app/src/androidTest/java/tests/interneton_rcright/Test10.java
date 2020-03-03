@@ -33,7 +33,7 @@ import static org.hamcrest.core.IsNull.notNullValue;
 
 /**
  * Диплинк не пришел и в сторе нет. RemoteConfig пришел
- */
+ *
 @LargeTest
 @RunWith(AndroidJUnit4.class)
 public class Test10
@@ -100,4 +100,4 @@ public class Test10
         Assert.assertTrue(finallink.contains("&sub_id_4=&"));
         Assert.assertTrue(finallink.contains("&sub_id_5=&"));
     }
-}
+}*/
