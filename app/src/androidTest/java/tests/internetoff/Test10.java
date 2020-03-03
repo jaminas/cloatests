@@ -1,6 +1,6 @@
 package tests.internetoff;
 
-import com.example.testdeeplink.MainActivity;
+import {PACKAGE}.MainActivity;
 
 import android.content.Intent;
 import androidx.test.ext.junit.runners.AndroidJUnit4;

@@ -1,8 +1,9 @@
 package tests.internetoff;
 
+import {PACKAGE}.MainActivity;
+
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
-import com.example.testdeeplink.MainActivity;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
