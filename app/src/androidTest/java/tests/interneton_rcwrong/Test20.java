@@ -1,10 +1,11 @@
 package tests.interneton_rcwrong;
 
+import {PACKAGE}.MainActivity;
+
 import android.content.Intent;
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
-import com.example.testdeeplink.MainActivity;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -17,7 +18,7 @@ import tests.helper.SharedPrefs;
 import static androidx.test.InstrumentationRegistry.getTargetContext;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 
-/*
+
 @RunWith(AndroidJUnit4.class)
 public class Test20
 {
@@ -48,11 +49,11 @@ public class Test20
     public void withdeeplink_test() throws InterruptedException
     {
         ActivityHelper.checkMainActivity(this.activityTestRule);
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         ActivityHelper.checkCloakaActivity(this.activityTestRule);
 
         Assert.assertTrue(store.containsDeeplink());
         Assert.assertFalse(store.containsFinallink());
         Assert.assertEquals(this.deeplink.getDeeplink(), store.getDeeplink());
     }
-}*/
+}

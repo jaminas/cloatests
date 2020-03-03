@@ -1,10 +1,11 @@
 package tests.interneton_rcwrong;
 
+import {PACKAGE}.MainActivity;
+
 import android.content.Intent;
 import android.net.Uri;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
-import com.example.testdeeplink.MainActivity;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -17,7 +18,6 @@ import tests.helper.SharedPrefs;
 import static androidx.test.InstrumentationRegistry.getTargetContext;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 
-/*
 @RunWith(AndroidJUnit4.class)
 public class Test40
 {
@@ -56,5 +56,5 @@ public class Test40
         Assert.assertFalse(store.containsFinallink());
         Assert.assertEquals(this.deeplink.getDeeplink(), store.getDeeplink());
     }
-}*/
+}
 

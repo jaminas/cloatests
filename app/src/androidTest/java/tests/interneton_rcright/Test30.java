@@ -1,31 +1,27 @@
 package tests.interneton_rcright;
 
+import {PACKAGE}.MainActivity;
+
 import android.net.Uri;
 import android.provider.Settings;
 import android.util.Log;
 import android.webkit.URLUtil;
-
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.uiautomator.UiObject;
 import androidx.test.uiautomator.UiObjectNotFoundException;
 import androidx.test.uiautomator.UiSelector;
-
 import com.example.testdeeplink.BuildConfig;
-import com.example.testdeeplink.MainActivity;
 import com.google.android.gms.ads.identifier.AdvertisingIdClient;
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
 import java.io.IOException;
-
 import tests.helper.ActivityHelper;
 import tests.helper.SharedPrefs;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
@@ -34,7 +30,7 @@ import static org.hamcrest.core.IsNull.notNullValue;
 
 /**
  * Диплинк не пришел, но должен лежать в сторе. RemoteConfig не пришел, но должен лежать в сторе
- *
+ */
 @RunWith(AndroidJUnit4.class)
 public class Test30
 {
@@ -98,4 +94,4 @@ public class Test30
 
         store.clear();
     }
-}*/
+}
