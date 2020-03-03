@@ -17,6 +17,7 @@ import tests.helper.Deeplink;
 import tests.helper.SharedPrefs;
 import static androidx.test.InstrumentationRegistry.getTargetContext;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
+import static tests.helper.Util.CT_WAIT_LIMIT;
 
 @RunWith(AndroidJUnit4.class)
 public class Test40
@@ -49,7 +50,7 @@ public class Test40
     public void rewritedeeplink_test() throws InterruptedException
     {
         ActivityHelper.checkMainActivity(this.activityTestRule);
-        Thread.sleep(2000);
+        Thread.sleep(CT_WAIT_LIMIT);
         ActivityHelper.checkCloakaActivity(this.activityTestRule);
 
         Assert.assertTrue(store.containsDeeplink());

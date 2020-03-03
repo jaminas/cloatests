@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 import tests.helper.ActivityHelper;
 import tests.helper.SharedPrefs;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
-
+import static tests.helper.Util.CT_WAIT_LIMIT;
 
 @RunWith(AndroidJUnit4.class)
 public class Test30
@@ -38,7 +38,7 @@ public class Test30
     public void withoutdeeplink_test() throws InterruptedException
     {
         ActivityHelper.checkMainActivity(this.activityTestRule);
-        Thread.sleep(2000);
+        Thread.sleep(CT_WAIT_LIMIT);
         ActivityHelper.checkCloakaActivity(this.activityTestRule);
         Assert.assertTrue(store.containsDeeplink());
         Assert.assertFalse(store.containsFinallink());

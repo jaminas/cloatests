@@ -27,6 +27,7 @@ import tests.helper.SharedPrefs;
 import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsNull.notNullValue;
+import static tests.helper.Util.CT_WAIT_LIMIT;
 
 /**
  * Диплинк не пришел, но должен лежать в сторе. RemoteConfig не пришел, но должен лежать в сторе
@@ -55,7 +56,7 @@ public class Test30
     public void withoutdeeplink_test()  throws InterruptedException, UiObjectNotFoundException, GooglePlayServicesNotAvailableException, IOException, GooglePlayServicesRepairableException
     {
         ActivityHelper.checkMainActivity(this.activityTestRule);
-        Thread.sleep(2000);
+        Thread.sleep(CT_WAIT_LIMIT);
         ActivityHelper.checkNoActivity(this.activityTestRule);
 
         Assert.assertTrue(store.containsDeeplink());
